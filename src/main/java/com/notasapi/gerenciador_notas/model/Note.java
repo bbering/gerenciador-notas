@@ -29,4 +29,8 @@ public class Note {
 
     @Column(name = "isCompleted")
     private Boolean isCompleted;
+
+    public Note() {
+
+    }
 }
