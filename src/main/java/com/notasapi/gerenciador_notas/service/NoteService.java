@@ -37,11 +37,18 @@ public class NoteService {
         }
     }
 
+    @Transactional
     public Note updateNote(Note note, Long id) {
         Note noteToUpdate = noteRepository.findById(id).orElseThrow(() -> new RuntimeException("User not found!"));
         noteToUpdate.setDescription(note.getDescription());
         noteToUpdate.setIsCompleted(note.getIsCompleted());
         noteRepository.save(noteToUpdate);
         return noteToUpdate;
+    }
+
+    public Note getNoteById(Long id) {
+        Note foundNote = noteRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Nenhum usuario encontrado!"));
+        return foundNote;
     }
 }

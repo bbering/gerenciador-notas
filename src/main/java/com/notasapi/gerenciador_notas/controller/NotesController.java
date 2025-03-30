@@ -51,4 +51,10 @@ public class NotesController {
         Note noteToUpdate = noteService.updateNote(note, id);
         return new ResponseEntity<>(noteToUpdate, HttpStatus.OK);
     }
+
+    @GetMapping("/list/{id}")
+    public ResponseEntity<?> getNoteById(@PathVariable Long id) {
+        Note foundNote = noteService.getNoteById(id);
+        return new ResponseEntity<>(foundNote, HttpStatus.OK);
+    }
 }
