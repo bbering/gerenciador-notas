@@ -24,6 +24,11 @@ public class NotesController {
     @Autowired
     private NoteService noteService;
 
+    @GetMapping("")
+    public ResponseEntity<?> defaultMessage() {
+        return new ResponseEntity<>("A API está em funcionamento!", HttpStatus.OK);
+    }
+
     @PostMapping("/create")
     public ResponseEntity<?> createTask(@RequestBody Note note) {
         try {
