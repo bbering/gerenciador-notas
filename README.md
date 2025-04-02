@@ -38,7 +38,7 @@ As dependências utilizadas foram:
 
 - **Java 17** ou superior
 - **Maven** para build do projeto
-- **Docker** para containerizar a aplicação (caso queira buildar uma imagem localmente)
+- **Docker** para containerizar a aplicação (o projeto inclui um arquivo Dockerfile na raiz, permitindo containerizar a aplicação e construir uma imagem Docker para executar o aplicativo de forma isolada)
 
 ### Rodando localmente
 
