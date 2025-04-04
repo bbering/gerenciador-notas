@@ -1,6 +1,6 @@
 # Gerenciador de Notas
 
-Este projeto é uma simples API de gerenciamento de notas pessoais, permitindo criar, listar, atualizar e excluir notas.
+Este projeto é uma simples API de gerenciamento de notas pessoais, permitindo criar, listar, atualizar e excluir notas. A API será posta em produção utilizando o Docker para containerização da aplicação, possibilitando o deploy da imagem no Render.
 
 ## Tecnologias Utilizadas
 
